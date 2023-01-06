@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Route, ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-detalle',
   templateUrl: './detalle.page.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetallePage implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
   }

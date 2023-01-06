@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Prueba uno</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-title>
+      Nueva cuenta
+    </ion-card-title>
+    <ion-card-subtitle>Completa los campos</ion-card-subtitle>
+    <ion-item>
+      <ion-label position="stacked">Usuario</ion-label>
+      <ion-input minlength="3" maxlength="8" placeholder="Ingresa tu nick"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Correo</ion-label>
+      <ion-input type="email" placeholder="Ingresa tu email"></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Selecciona tu carrera">
+          <ion-select-option value="cocina">Cocina</ion-select-option>
+          <ion-select-option value="infor">Informatica</ion-select-option>
+          <ion-select-option value="redes">Redes</ion-select-option>
+          <ion-select-option value="adminis">Administracion</ion-select-option>
+          <ion-select-option value="otra">Otra...</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-input type="password" placeholder="Ingresa tu contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+    <ion-button (click)="alertaRegistro()" color="success"[routerLink]="['/home']">Ingresar</ion-button>
+    <ion-button fill="clear">Limpiar</ion-button>
+
+</ion-content>
